@@ -1,5 +1,8 @@
 nav {
+  position: fixed;
+  background-color: #fff;
   display: flex;
+  width: 100%;
   justify-content: space-between;
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
   align-items: center;
@@ -13,7 +16,12 @@ nav ul {
   align-items: center;
 }
 nav ul li {
+  color: #484848;
   padding-inline: 20px;
+  font-weight: 600;
+}
+nav ul li:hover {
+  color: #070000;
 }
 nav h1 {
   margin-left: 30px;
@@ -21,8 +29,10 @@ nav h1 {
 nav .dropdown {
   margin-right: 30px;
   position: relative;
+  color: #484848;
+  font-weight: 600;
 }
-nav .dropdownContent {
+nav .dropdownList {
   margin-top: 5px;
   position: absolute;
   top: 100%;
@@ -34,6 +44,12 @@ nav .dropdownContent {
   padding: 10px;
   box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.16);
 }
-nav .dropdownContent p {
-  margin-block: 5px;
+nav .dropdownList li {
+  padding: 8px;
+  cursor: pointer;
+  color: #484848;
+  font-weight: 600;
+}
+nav .dropdownList li:hover {
+  color: #070000;
 }/*# sourceMappingURL=Header.css.map */

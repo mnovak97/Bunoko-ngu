@@ -12,6 +12,7 @@ i18next
                 translation: {
                     home: 'Home',
                     services: 'Services',
+                    about:'About us',
                     contacts: 'Contacts'
                 }
             },
@@ -19,6 +20,7 @@ i18next
                 translation: {
                     home: 'Početna',
                     services: 'Ponuda',
+                    about: "O nama",
                     contacts: 'Kontakt'
                 }
             }

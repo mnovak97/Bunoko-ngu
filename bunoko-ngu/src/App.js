@@ -18,7 +18,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Puši kuraz
+          Hello
         </a>
       </header>
     </div>

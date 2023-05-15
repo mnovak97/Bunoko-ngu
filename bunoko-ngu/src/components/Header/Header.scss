@@ -1,5 +1,8 @@
 nav{
+    position: fixed;
+    background-color: #fff;
     display: flex;
+    width: 100%;
     justify-content: space-between;
     box-shadow: 0 8px 32px 0 rgba(0,0,0,0.1);
     align-items: center;
@@ -11,7 +14,12 @@ nav{
         list-style-type: none;
         align-items: center;
         li{
+            color: #484848;
             padding-inline: 20px;
+            font-weight: 600;
+        }
+        li:hover {
+            color: #070000;
         }
     }
     h1{
@@ -20,8 +28,11 @@ nav{
     .dropdown{
         margin-right: 30px;
         position: relative;
+        color: #484848;
+        font-weight: 600;
     }
-    .dropdownContent{
+
+    .dropdownList {
         margin-top: 5px;
         position: absolute;
         top:100%;
@@ -32,8 +43,18 @@ nav{
         background-color: white;
         padding: 10px;
         box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.16);
-        p{
-            margin-block: 5px;
-        }
     }
+      
+    .dropdownList li {
+        padding: 8px;
+        cursor: pointer;
+        color: #484848;
+        font-weight: 600;
+    }
+      
+    .dropdownList li:hover {
+        //background-color: #f1f1f1;
+        color: #070000;
+    }
+
 }

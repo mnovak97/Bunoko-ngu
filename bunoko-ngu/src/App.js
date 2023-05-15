@@ -3,7 +3,6 @@ import './App.css';
 import './components/Header/Header.js';
 import Header from './components/Header/Header.js';
 
-
 function App() {
   return (
     <div className="App">
@@ -19,7 +18,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Puši kuraz
+          Hello
         </a>
       </header>
     </div>

@@ -33,7 +33,7 @@ function Header() {
         <h1>bunoko n.g.u.</h1>
         <ul>
           <li>
-            <Link to="/about" >{t('home')}</Link>  
+            <Link to="/" >{t('home')}</Link>  
           </li>
           <li>
             <Link to="/about">{t('about')}</Link>  

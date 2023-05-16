@@ -1,6 +1,7 @@
-import "./Header.css";
+import "./Header.scss";
 import { useTranslation } from "react-i18next";
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom'  
 
 
 function Header() {
@@ -9,7 +10,7 @@ function Header() {
 
   const availableLanguages = [
     { code: 'cro', label: 'HR' },
-    { code: 'en', label: 'ENG' },
+    { code: 'en-US', label: 'ENG' },
   ];
 
   const currentLanguage = availableLanguages.find(
@@ -31,10 +32,18 @@ function Header() {
       <nav>
         <h1>bunoko n.g.u.</h1>
         <ul>
-          <li>{t('home')}</li>
-          <li>{t('about')}</li>
-          <li>{t('services')}</li>
-          <li>{t('contacts')}</li>
+          <li>
+            <Link to="/about" >{t('home')}</Link>  
+          </li>
+          <li>
+            <Link to="/about">{t('about')}</Link>  
+          </li>
+          <li>
+            <Link to="/services">{t('services')}</Link>  
+          </li>
+          <li>
+            <Link to="/contact">{t('contact')}</Link>  
+          </li>
         </ul>
         <div className="dropdown" onClick={toggleDropdown}>
         {currentLanguage.label}

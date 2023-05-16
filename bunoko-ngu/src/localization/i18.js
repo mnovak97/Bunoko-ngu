@@ -13,7 +13,7 @@ i18next
                     home: 'Home',
                     services: 'Services',
                     about:'About us',
-                    contacts: 'Contacts'
+                    contact: 'Contact'
                 }
             },
             cro: {
@@ -21,7 +21,7 @@ i18next
                     home: 'Početna',
                     services: 'Ponuda',
                     about: "O nama",
-                    contacts: 'Kontakt'
+                    contact: 'Kontakt'
                 }
             }
         }

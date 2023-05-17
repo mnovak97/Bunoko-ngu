@@ -13,7 +13,12 @@ i18next
                     home: 'Home',
                     services: 'Services',
                     about:'About us',
-                    contact: 'Contact'
+                    contact: 'Contact',
+                    write: 'Contact us',
+                    name: 'Name',
+                    message: 'Message',
+                    email: 'Email',
+                    subject: 'Subject'
                 }
             },
             cro: {
@@ -21,7 +26,12 @@ i18next
                     home: 'Početna',
                     services: 'Ponuda',
                     about: "O nama",
-                    contact: 'Kontakt'
+                    contact: 'Kontakt',
+                    write: 'Pišite nam',
+                    name: 'Ime',
+                    message: 'Poruka',
+                    email: 'Email',
+                    subject: 'Predmet'
                 }
             }
         }

@@ -26,6 +26,7 @@ form {
   max-width: 600px;
   border-radius: 10px;
   box-shadow: 2px 2px 2px 2px #e7e5e5;
+  position: absolute;
 }
 
 form h2 {
@@ -42,4 +43,18 @@ form input, form textarea {
   border-radius: 10px;
   border: 0;
   font-size: 16px;
-}/*# sourceMappingURL=Contact.css.map */
+}
+
+.contactInfo {
+  display: block;
+}
+
+.info {
+  position: relative;
+  top: 700px;
+  border: 0;
+  display: flex;
+}
+.info div {
+  padding-right: 100px;
+}

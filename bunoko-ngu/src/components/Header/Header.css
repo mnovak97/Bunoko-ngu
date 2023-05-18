@@ -39,6 +39,8 @@ header nav ul li a {
   padding-block: 25px;
   text-decoration: none;
   color: white;
+  padding-block: 25px;
+  padding-inline: 20px;
 }
 header nav ul li:hover {
   border-bottom: 2px solid white;

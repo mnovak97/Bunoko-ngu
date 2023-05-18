@@ -4,10 +4,8 @@ import React, { useState } from 'react';
 
 function Contact() {
     const { t } = useTranslation()
-    const [formStatus, setFormStatus] = React.useState('Send')
     const onSubmit = (e) => {
         e.preventDefault()
-        setFormStatus('Submitting...')
         const { name,email,subject,message} = e.target.elements
         let conFom = {
             name: name.value,
@@ -28,7 +26,7 @@ function Contact() {
                 <input className='formInput' placeholder={t('subject')} type='text' id='subject' required/>
                 <textarea className='formInput' placeholder={t('message')} id='message' required />
                 <button className='buttonSubmit' type='submit'>
-                    {formStatus}
+                    {t('send')}
                 </button>
             </form>
         </div>

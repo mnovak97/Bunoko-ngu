@@ -21,7 +21,7 @@ function HomePage() {
               </div>
               <div className='card-services'>
                 <img class="scale-with-grid" src="http://bunoko-ngu.hr/wp-content/uploads/2015/04/home_factory_icon_2.png" alt="home_factory_icon_2" width="116" height="112" />
-                <h3>Prematanje elektromotora</h3> 
+                <h3>Prematanje elektromotora i rotora</h3> 
               </div>
               <div className='card-services'>
                 <img class="scale-with-grid" src="http://bunoko-ngu.hr/wp-content/uploads/2015/04/home_factory_icon_3.png" alt="home_factory_icon_2" width="116" height="112" />
@@ -31,6 +31,37 @@ function HomePage() {
                 <img class="scale-with-grid" src="http://bunoko-ngu.hr/wp-content/uploads/2015/04/home_factory_icon_5.png" alt="home_factory_icon_2" width="116" height="112" />
                 <h3>Servis alata</h3> 
               </div>
+           </div>
+           <div className='card card-grid'>
+              <div className='card-services'>
+                <img class="scale-with-grid" src="http://bunoko-ngu.hr/wp-content/uploads/2015/04/home_factory_icon_3.png" alt="home_factory_icon_2" width="116" height="112" />
+                <h3>Popravak svih vrsta električnog ručnog alata</h3>
+              </div>
+              <div className='card-services'>
+                <img class="scale-with-grid" src="http://bunoko-ngu.hr/wp-content/uploads/2015/04/home_factory_icon_1.png" alt="home_factory_icon_2" width="116" height="112" />
+                <h3>Popravak građevinskih dizalica</h3> 
+              </div>
+              <div className='card-services'>
+                <img class="scale-with-grid" src="http://bunoko-ngu.hr/wp-content/uploads/2015/04/home_factory_icon_6.png" alt="home_factory_icon_2" width="116" height="112" />
+                <h3>Popravak vibratora betonatora betona</h3> 
+              </div>
+             
+              
+           </div>
+              <h2>Tražiš karijeru ili te zanima praksa</h2>
+           <div className='container_middle'>
+              <p>
+                Zanima te karijera u ovom području ili pak trebaš odraditi praksu? 
+                Motiviran si i spreman učiti?
+                U bunoko-ngu imaš priliku raditi uz mentora sa preko 20 godina iskustva!
+                <br/>
+                 Javi nam se!
+              </p>
+              <button>Prijavi se!</button>
+           </div>
+           <h2>Kontaktiraj nas!</h2>
+           <div>
+            <p></p>
            </div>
         </div>
     );

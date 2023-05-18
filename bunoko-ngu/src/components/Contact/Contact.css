@@ -2,7 +2,7 @@
   padding: 15px;
   width: 250px;
   border-radius: 30px;
-  background-color: #121e2d;
+  background-color: #1f4d97;
   color: #fff;
   font-size: 18px;
   cursor: pointer;
@@ -57,4 +57,4 @@ form input, form textarea {
 }
 .info div {
   padding-right: 100px;
-}/*# sourceMappingURL=Contact.css.map */
+}

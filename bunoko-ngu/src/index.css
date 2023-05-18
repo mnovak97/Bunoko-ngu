@@ -23,4 +23,24 @@ body main .mainDiv {
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+button {
+  background: #121e2d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  transition: 0.3s;
+}
+button:hover {
+  background: transparent;
+  color: #121e2d;
+}
+
+.container_middle {
+  text-align: center;
+  margin-bottom: 50px;
 }/*# sourceMappingURL=index.css.map */

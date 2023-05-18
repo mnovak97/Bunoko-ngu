@@ -1,3 +1,60 @@
-mainDiv {
-  padding-top: 68px;
+.buttonSubmit {
+  padding: 15px;
+  width: 250px;
+  border-radius: 30px;
+  background-color: #121e2d;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  margin: 20px auto 0;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 2vw 4vw;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 2px #e7e5e5;
+  position: absolute;
+}
+
+form h2 {
+  color: #555;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+form input, form textarea {
+  box-shadow: 2px 2px 2px 2px #e7e5e5;
+  margin: 10px 0;
+  padding: 20px;
+  outline: none;
+  border-radius: 10px;
+  border: 0;
+  font-size: 16px;
+}
+
+.contactInfo {
+  display: block;
+}
+
+.info {
+  position: relative;
+  top: 700px;
+  border: 0;
+  display: flex;
+}
+.info div {
+  padding-right: 100px;
 }/*# sourceMappingURL=Contact.css.map */

@@ -1,3 +1,75 @@
-mainDiv {
-  padding-top: 68px;
+.card {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.card-image {
+  max-width: 800px;
+  width: 100%;
+  position: relative;
+}
+.card-image h2 {
+  text-align: left;
+}
+.card-image img {
+  right: -550px;
+  top: 50px;
+  position: absolute;
+}
+.card-grid {
+  margin-bottom: 50px;
+}
+.card-grid .card-services {
+  width: 200px;
+  height: 200px;
+  padding: 30px;
+  background-color: #121e2d;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.3s;
+}
+.card-grid .card-services h3 {
+  padding-top: 30px;
+  text-align: center;
+}
+.card-grid .card-services:hover {
+  background-color: white;
+  color: #121e2d;
+}
+.card .card-content {
+  background-color: #d2d7db;
+  padding: 60px;
+  padding-right: 200px;
+}
+.card h2 {
+  font-size: 54px;
+  line-height: 54px;
+  font-weight: 300;
+  letter-spacing: 0px;
+  color: #121e2d;
+  padding-bottom: 50px;
+}
+.card button {
+  margin-top: 30px;
+  background: #121e2d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  transition: 0.3s;
+}
+.card button:hover {
+  background: #d2d7db;
+  color: #121e2d;
+}
+
+h2 {
+  font-size: 60px;
+  text-align: center;
+  padding-block: 50px;
 }/*# sourceMappingURL=HomePage.css.map */

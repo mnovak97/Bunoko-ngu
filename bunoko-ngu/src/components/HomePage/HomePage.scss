@@ -1,3 +1,76 @@
-mainDiv {
-    padding-top: 68px;
+.card{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    &-image{
+        h2{
+            text-align: left;
+        }
+        max-width: 800px;
+        width: 100%;
+        position: relative;
+        img{
+            right: -550px;
+            top:50px;
+            position: absolute;
+        }
+    }
+    &-grid{
+        margin-bottom:50px ;
+        .card-services{
+            width: 200px;
+            height: 200px;
+            padding: 30px;
+            background-color:#121e2d;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            transition: 0.3s;
+            h3{
+                padding-top: 30px;
+                text-align: center;
+            }
+            &:hover{
+                background-color: white;
+                color: #121e2d;
+            }
+        }
+    }
+    .card-content{
+        background-color:#d2d7db;
+        padding: 60px;
+        padding-right: 200px;
+    }
+    h2{
+        font-size: 54px;
+        line-height: 54px;
+        font-weight: 300;
+        letter-spacing: 0px;
+        color: #121e2d;
+        padding-bottom: 50px;
+    }
+    
+    button{
+        margin-top: 30px;
+        background: #121e2d;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font: inherit;
+        cursor: pointer;
+        outline: inherit;
+        transition: 0.3s;
+        &:hover{
+            background: #d2d7db;
+            color: #121e2d;
+        }
+    }
+
+}
+h2{
+    font-size: 60px;
+    text-align: center;
+    padding-block: 50px;
 }

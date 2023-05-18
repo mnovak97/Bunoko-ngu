@@ -1,11 +1,26 @@
 body {
+  padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  max-width: 1500px;
 }
 body main {
+  width: 100%;
+  margin-inline: 80px;
+  display: flex;
+  justify-content: center;
   padding-top: 68px;
+}
+body main .mainDiv {
+  max-width: 1400px;
+  width: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
 code {

@@ -10,6 +10,7 @@ header {
 }
 header h1 {
   color: white;
+  cursor: pointer;
 }
 header nav {
   padding-inline: 80px;
@@ -30,6 +31,7 @@ header nav ul li {
   padding-block: 25px;
   padding-inline: 20px;
   font-weight: 600;
+  cursor: pointer;
 }
 header nav ul li a {
   text-decoration: none;

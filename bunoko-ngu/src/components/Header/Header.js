@@ -30,16 +30,16 @@ function Header() {
   return (
     <header>
       <nav>
-        <h1>bunoko n.g.u.</h1>
+        <h1><Link to="/" >bunoko n.g.u.</Link></h1>
         <ul>
-          <li>
-            <Link to="/" >{t('home')}</Link>  
-          </li>
           <li>
             <Link to="/about">{t('about')}</Link>  
           </li>
           <li>
             <Link to="/services">{t('services')}</Link>  
+          </li>
+          <li>
+            <Link to="/carriers" >{t('carriers')}</Link>  
           </li>
           <li>
             <Link to="/contact">{t('contact')}</Link>  

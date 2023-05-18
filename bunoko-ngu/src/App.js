@@ -7,6 +7,7 @@ import HomePage from './components/HomePage/HomePage';
 import Contact from './components/Contact/Contact';
 import { BrowserRouter as Router, Routes, Route}
     from 'react-router-dom';
+import AboutUs from './components/AboutUs/AboutUs';
     
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
       <Routes>
         <Route path='/' element={<HomePage/>} />
         <Route path='/contact' element={<Contact/>} />
+        <Route path='/about' element={<AboutUs/>} />
       </Routes>
       </main>
    </Router>

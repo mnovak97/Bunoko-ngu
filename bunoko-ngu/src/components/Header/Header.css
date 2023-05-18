@@ -9,7 +9,11 @@ header {
   justify-content: center;
 }
 header h1 {
+  cursor: pointer;
+}
+header h1 a {
   color: white;
+  text-decoration: none;
 }
 header nav {
   padding-inline: 80px;
@@ -27,11 +31,12 @@ header nav ul {
   align-items: center;
 }
 header nav ul li {
-  padding-block: 25px;
   padding-inline: 20px;
   font-weight: 600;
+  padding-block: 25px;
 }
 header nav ul li a {
+  padding-block: 25px;
   text-decoration: none;
   color: white;
 }

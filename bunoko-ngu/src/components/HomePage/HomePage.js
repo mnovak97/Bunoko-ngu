@@ -61,7 +61,40 @@ function HomePage() {
            </div>
            <h2>Kontaktiraj nas!</h2>
            <div>
-            <p></p>
+           <div className='container-contact'>
+            <h1>Bukovac gornji 96, <br/> 10000, Zagreb</h1>
+            <iframe
+              className="map-container"
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11117.373663981441!2d16.0091739!3d45.8444259!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc472b04d300cd798!2sBUNOKO%20N.G.U%20D.O.O.!5e0!3m2!1shr!2shr!4v1654090549910!5m2!1shr!2shr"
+              width="600"
+              height="450"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          <div>
+            <h4>BUNOKO N.G.U. d.o.o.</h4>
+            <p>
+
+            Gornji Bukovac 96, 10000,Zagreb
+            <br />
+            Telefon: 01 2340 884
+            <br />
+            Mobitel: 091 2005 862
+            <br />
+            Fax: 01 2340 884
+            <br />
+            RADNO VRIJEME:
+            <br />
+            pon-pet: 9-17
+            <br />
+            sub: 9-13
+            <br />
+            <a href="mailto:bunokongu@gmail.com">bunokongu@gmail.com</a>
+            </p>
+          </div>
+          
+        </div>
            </div>
         </div>
     );

@@ -14,7 +14,7 @@ i18next
                     services: 'Services',
                     about:'About us',
                     contact: 'Contact',
-                    carriers: 'Carriers',
+                    careers: 'Careers',
                     write: 'Contact us',
                     name: 'Name',
                     message: 'Message',
@@ -26,10 +26,10 @@ i18next
             cro: {
                 translation: {
                     home: 'Početna',
-                    services: 'Ponuda',
+                    services: 'Usluge',
                     about: "O nama",
                     contact: 'Kontakt',
-                    carriers: 'Karijere',
+                    careers: 'Karijere',
                     write: 'Pišite nam',
                     name: 'Ime',
                     message: 'Poruka',

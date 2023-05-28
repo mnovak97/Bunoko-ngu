@@ -80,3 +80,30 @@ h2{
         margin-top: 30px;
     }
 }
+.container-contact{
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    h1{
+        font-size: 54px;
+    line-height: 54px;
+    font-weight: 300;
+    letter-spacing: 0px;
+    color: #121e2d;
+    text-align: right;
+    }
+    h4,p{
+        font-size: 28px;
+        line-height: 32px;
+        font-weight: 300;
+        letter-spacing: 0px;
+        color: #121e2d;
+    }
+    h4{
+        font-weight: 600;
+    }
+    a{
+        color: #121e2d;
+        font-weight: 600;
+    }
+}

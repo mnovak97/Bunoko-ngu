@@ -18,7 +18,8 @@ i18next
                     name: 'Name',
                     message: 'Message',
                     email: 'Email',
-                    subject: 'Subject'
+                    subject: 'Subject',
+                    send: 'Send'
                 }
             },
             cro: {
@@ -31,7 +32,8 @@ i18next
                     name: 'Ime',
                     message: 'Poruka',
                     email: 'Email',
-                    subject: 'Predmet'
+                    subject: 'Predmet',
+                    send: 'Pošalji'
                 }
             }
         }

@@ -1,27 +1,23 @@
+import { useTranslation } from 'react-i18next';
 import styles from './AboutUs.module.css';
-import { useTranslation } from "react-i18next";
-import React, { useState } from "react";
 
 function AboutUs() {
+const { t } = useTranslation()
+
   return (
     <div className="mainDiv">
       <div className={`${styles.card_image} ${styles.card}`}>
         <div className={styles.card_content}>
-          <h2>O nama</h2>
+          <h2>{t('about')}</h2>
           <p>
-            Tvrtka ‘BUNOKO N.G.U.’ nasljednik je obrta osnovanog 1995. godine
-            koji je 2007. registriran kao d.o.o. za poslovanje nekretninama,
-            graditeljstvo i usluge.
+            {t('aboutUsParagraphOne')}
             <br />
             <br />
-            Nastavljajući obrtničku tradiciju tvrtka se nastavila razvijati kao
-            specijalist za popravak i servisiranje električnih alata i strojeva,
-            rashladne tehnike i elektroinstalacija, a o čemu brine naša ekipa
-            vrsnih majstora elektromehaničara.
+            {t('aboutUsParagraphTwo')}
           </p>
-          <button>Pridruži se</button>
+          <button>{t('join')}</button>
         </div>
-        <img src="https://picsum.photos/700/450" />
+        <img src="https://picsum.photos/700/450" alt='' />
       </div>
     </div>
   );

@@ -1,6 +1,6 @@
 import "./Contact.scss";
 import { useTranslation } from "react-i18next";
-import React, { useState,useRef } from "react";
+import React, { useRef } from "react";
 import emailjs from '@emailjs/browser';
 
 function Contact() {
@@ -60,17 +60,17 @@ function Contact() {
             <h4>BUNOKO N.G.U. d.o.o.</h4>
             Gornji Bukovac 96, 10000,Zagreb
             <br />
-            Telefon: 01 2340 884
+            {t('phone')}: 01 2340 884
             <br />
-            Mobitel: 091 2005 862
+            {t('mobile')}: 091 2005 862
             <br />
             Fax: 01 2340 884
             <br />
-            RADNO VRIJEME:
+            {t('workHours')}:
             <br />
-            pon-pet: 9-17
+            {t('week')}: 9-17
             <br />
-            sub: 9-13
+            {t('saturday')}: 9-13
             <br />
             <a href="mailto:bunokongu@gmail.com">bunokongu@gmail.com</a>
           </div>
@@ -81,6 +81,7 @@ function Contact() {
             height="450"
             allowfullscreen=""
             loading="lazy"
+            title="map"
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>

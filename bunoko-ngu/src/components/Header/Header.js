@@ -10,7 +10,7 @@ function Header() {
 
   const availableLanguages = [
     { code: 'cro', label: 'HR' },
-    { code: 'en-US', label: 'ENG' },
+    { code: 'en', label: 'ENG' },
   ];
 
   const currentLanguage = availableLanguages.find(

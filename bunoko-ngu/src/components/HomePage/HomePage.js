@@ -29,33 +29,33 @@ function HomePage() {
            <h2>{t('ourServices')}</h2>
            <div className='card card-grid'>
               <div className='card-services'>
-                <img class="scale-with-grid" src="http://bunoko-ngu.hr/wp-content/uploads/2015/04/home_factory_icon_1.png" alt="home_factory_icon_2" width="116" height="112" />
+                <img className="scale-with-grid" src="http://bunoko-ngu.hr/wp-content/uploads/2015/04/home_factory_icon_1.png" alt="home_factory_icon_2" width="116" height="112" />
                 <h3>{t('airCondition')}</h3>
               </div>
               <div className='card-services'>
-                <img class="scale-with-grid" src="http://bunoko-ngu.hr/wp-content/uploads/2015/04/home_factory_icon_2.png" alt="home_factory_icon_2" width="116" height="112" />
+                <img className="scale-with-grid" src="http://bunoko-ngu.hr/wp-content/uploads/2015/04/home_factory_icon_2.png" alt="home_factory_icon_2" width="116" height="112" />
                 <h3>{t('winding')}</h3> 
               </div>
               <div className='card-services'>
-                <img class="scale-with-grid" src="http://bunoko-ngu.hr/wp-content/uploads/2015/04/home_factory_icon_3.png" alt="home_factory_icon_2" width="116" height="112" />
+                <img className="scale-with-grid" src="http://bunoko-ngu.hr/wp-content/uploads/2015/04/home_factory_icon_3.png" alt="home_factory_icon_2" width="116" height="112" />
                 <h3>{t('toolsSale')}</h3> 
               </div>
               <div className='card-services'>
-                <img class="scale-with-grid" src="http://bunoko-ngu.hr/wp-content/uploads/2015/04/home_factory_icon_5.png" alt="home_factory_icon_2" width="116" height="112" />
+                <img className="scale-with-grid" src="http://bunoko-ngu.hr/wp-content/uploads/2015/04/home_factory_icon_5.png" alt="home_factory_icon_2" width="116" height="112" />
                 <h3>{t('tools')}</h3> 
               </div>
            </div>
            <div className='card card-grid'>
               <div className='card-services'>
-                <img class="scale-with-grid" src="http://bunoko-ngu.hr/wp-content/uploads/2015/04/home_factory_icon_3.png" alt="home_factory_icon_2" width="116" height="112" />
+                <img className="scale-with-grid" src="http://bunoko-ngu.hr/wp-content/uploads/2015/04/home_factory_icon_3.png" alt="home_factory_icon_2" width="116" height="112" />
                 <h3>{t('electricTools')}</h3>
               </div>
               <div className='card-services'>
-                <img class="scale-with-grid" src="http://bunoko-ngu.hr/wp-content/uploads/2015/04/home_factory_icon_1.png" alt="home_factory_icon_2" width="116" height="112" />
+                <img className="scale-with-grid" src="http://bunoko-ngu.hr/wp-content/uploads/2015/04/home_factory_icon_1.png" alt="home_factory_icon_2" width="116" height="112" />
                 <h3>{t('concreteCranes')}</h3> 
               </div>
               <div className='card-services'>
-                <img class="scale-with-grid" src="http://bunoko-ngu.hr/wp-content/uploads/2015/04/home_factory_icon_6.png" alt="home_factory_icon_2" width="116" height="112" />
+                <img className="scale-with-grid" src="http://bunoko-ngu.hr/wp-content/uploads/2015/04/home_factory_icon_6.png" alt="home_factory_icon_2" width="116" height="112" />
                 <h3>{t('concreteMixer')}</h3> 
               </div>
              

@@ -15,7 +15,7 @@ function Header() {
 
   const currentLanguage = availableLanguages.find(
     (language) => language.code === i18n.language
-  );
+  ) || availableLanguages[0];
 
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);

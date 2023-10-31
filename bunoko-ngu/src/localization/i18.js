@@ -70,7 +70,7 @@ i18next
                     phone: 'Telefon',
                     contactUs: 'Kontaktiraj nas',
                     apply: 'Prijavi se',
-                    careerParagraph: 'Zanima te karijera u ovom području ili pak trebaš odraditi praksu? Motiviran si i spreman učiti? U bunoko-ngu imaš priliku raditi uz mentora sa preko 20 godina iskustva!',
+                    careerParagraph: 'Zanima te karijera u ovom području ili pak trebaš odraditi praksu? Motiviran si i spreman učiti? U bunoko-ngu imaš priliku raditi uz mentora s preko 20 godina iskustva!',
                     careerTitle: 'Tražiš karijeru ili te zanima praksa',
                     concreteMixer: 'Popravak vibratora betonatora betona',
                     concreteCranes: 'Popravak građevinskih dizalica',

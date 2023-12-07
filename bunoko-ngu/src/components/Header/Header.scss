@@ -1,6 +1,8 @@
 header{
         h1{
             cursor: pointer;
+            padding-left: 0.75rem;
+            padding-top:0.75rem;
             a{
                 color: white;
                 text-decoration: none;
@@ -17,10 +19,11 @@ header{
         nav{            
         padding-inline: 80px;
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-end;
         align-items: center;
         max-width: 1400px;
         width: 100%;
+        
         ul{
             font-weight: 400;
             display: flex;

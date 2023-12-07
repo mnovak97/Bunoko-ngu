@@ -14,8 +14,7 @@ header{
         font-family: "Rubik", sans-serif;
         display: flex;
         justify-content: center;
-        nav{
-            
+        nav{            
         padding-inline: 80px;
         display: flex;
         justify-content: space-between;
@@ -78,6 +77,50 @@ header{
             //background-color: #f1f1f1;
             color: #070000;
         }
-    
+        
+        .menu-btn{
+            display:none;
+        }
     }
 }
+@media screen and (max-width:600px){
+    
+header{
+    position: relative;
+    height: fit-content;
+    h1{
+        font-size: 1.75rem;
+    }
+    nav {
+        flex-direction: column;
+        padding:0;
+        ul {
+            display: none;
+            flex-direction: column;
+            width: 100%;
+            margin-bottom: 0.25rem;
+            li {
+                width: 100%;
+                text-align: center;
+            }
+        }
+        
+        .menu-btn{
+            position:absolute;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            right:0;
+            top:-1.85rem;
+        }
+    }
+    .open {
+        display: flex;
+        padding:0;
+        padding-top:2.5rem;
+        left:50%;
+        transform: translate(-20%,0);
+            
+        }
+}}

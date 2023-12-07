@@ -1,0 +1,55 @@
+.display-card {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  margin-top: 2rem;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.display-card .service-lineup {
+  display: flex;
+  height: 100%;
+  margin: 0;
+  gap: 0;
+  flex-direction: column;
+}
+.display-card .active {
+  background: #d2d7db;
+  color: #121e2d;
+}
+.display-card article {
+  background: #d2d7db;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 2rem;
+}
+.display-card button {
+  margin: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .display-card {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 0;
+    width: -moz-fit-content;
+    width: fit-content;
+    border-radius: 0;
+  }
+  .display-card .service-lineup {
+    display: flex;
+    margin: 0;
+    gap: 0;
+    flex-direction: row;
+    height: 8.5rem;
+    font-size: 0.665rem;
+  }
+  .display-card .service-lineup img {
+    width: 3.65rem;
+    height: 3.65rem;
+  }
+  .display-card article {
+    width: -moz-fit-content;
+    width: fit-content;
+    font-size: 1.65rem;
+  }
+}/*# sourceMappingURL=Services.css.map */

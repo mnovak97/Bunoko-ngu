@@ -1,0 +1,53 @@
+.display-card{
+    display:grid;
+    grid-template-columns: 1fr 6fr;
+    margin-top:2rem;
+    border-radius: 20px;
+    overflow: hidden;
+    .service-lineup{
+        display:flex;
+        height: 100%;
+        margin:0;
+        gap:0;
+        flex-direction: column;
+    }
+    .active{
+        background: #d2d7db;
+        color: #121e2d;
+    }
+    article{
+        background: #d2d7db;
+        padding-left:1rem;
+        padding-right:1rem;
+        font-size: 2rem;
+    }
+    button{
+        margin:0;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .display-card{        
+        display:grid;
+        grid-template-columns: auto;
+        gap:0;
+        width: fit-content;
+        border-radius:0;
+        .service-lineup{
+            display:flex;
+            margin:0;
+            gap:0;
+            flex-direction: row;
+            height:8.5rem;
+            font-size: 0.665rem;
+            img{
+                width:3.65rem;
+                height: 3.65rem;
+            }
+        }
+        article{
+            width:fit-content;
+            font-size: 1.65rem;
+        }
+    }
+    }

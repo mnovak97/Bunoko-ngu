@@ -1,4 +1,4 @@
-import "./Contact.scss";
+import "./Contact.css";
 import { useTranslation } from "react-i18next";
 import React, { useRef } from "react";
 import emailjs from '@emailjs/browser';

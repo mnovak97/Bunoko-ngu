@@ -1,8 +1,14 @@
 import { useTranslation } from 'react-i18next';
 import styles from './AboutUs.module.css';
+import {useNavigate} from 'react-router-dom';
 
 function AboutUs() {
-const { t } = useTranslation()
+const { t } = useTranslation();
+const navigate = useNavigate();
+
+const navigateContact = () => {
+  navigate('/contact');
+};
 
   return (
     <div className="mainDiv">
@@ -15,7 +21,7 @@ const { t } = useTranslation()
             <br />
             {t('aboutUsParagraphTwo')}
           </p>
-          <button>{t('join')}</button>
+          <button onClick={navigateContact}>{t('join')}</button>
         </div>
         <img src="https://picsum.photos/700/450" alt='' />
       </div>

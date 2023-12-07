@@ -31,7 +31,7 @@ i18next
                     phone: 'Phone',
                     contactUs: 'Contact us',
                     apply: 'Apply',
-                    careerParagraph: 'Are you interested in a career in this field or do you need to do an internship? Are you motivated and ready to learn? In bunoko-ng, you have the opportunity to work with a mentor with over 20 years of experience!',
+                    careerParagraph: 'Are you interested in a career in this field or do you need to do an internship? Are you motivated and ready to learn? In bunoko-ngu, you have the opportunity to work with a mentor with over 20 years of experience!',
                     careerTitle: 'Are you looking for a career or are you interested in an internship?',
                     concreteMixer: 'Repair of concrete mixer vibrators',
                     concreteCranes: 'Repair of construction cranes',
@@ -43,8 +43,17 @@ i18next
                     ourServices: 'Our services',
                     more: 'Find out more',
                     tradition: 'A tradition of more than two decades of successful work is a guarantee of our quality, as our numerous clients have already convinced themselves. Call 091/ 20 05 862',
-                    service: 'Car air conditioning service, all kinds of electrical tools and machines, refrigeration technology and electrical installations'
-
+                    service: 'Car air conditioning service, all kinds of electrical tools and machines, refrigeration technology and electrical installations',
+                    acImportance: 'Important part of the vehicle preparation for the upcoming season (summer or winter) is high-quality preparation of the car air conditioning system. Its proper and regular maintenance ensures long-lasting life and a pleasant and healthy journey for the driver and passengers.',
+                    acService: 'Using modern systems for recharging and controlling the refrigerant in the air conditioning system and with our certified and trained staff, auto repair shop Bunoko ensures proper maintenance of the air conditioning system in your vehicle.',
+                    acServiceDetail:'Inspection of the air conditioning system, recharging A/C refrigerant (R134a) to the prescribed amount, refrigerant recycling and vacuuming the A/C system, leakage inspection using UV ink, oil replacement in the A/C system, high and low pressure control in the system, part replacements of the air conditioner, part replacements of the cooling system',
+                    toolSaleDetail:'In addition to air conditioner maintenance, winding and tool repair services, we offer the purchase and sale of desired tools and accessories.',
+                    windingDetail:" Your vehicle's rotor is a critical element in the smooth functioning of electric motors.",
+                    windingDetail2: "We offer thorough rotor inspections, identifying signs of wear, imbalance, or damage.",
+                    windingDetail3:"If needed, we provide precision rotor rewinding or replacement services, utilizing industry-best practices to enhance performance and extend the lifespan of your motor.",
+                    toolRepairDetail:'We offer maintenance and repair services for tools, machines, and apparatus, including concrete mixer vibrators, construction cranes, and all types of electric hand tools. ',
+                    toolRepairDetail2:'Our services contribute to their longevity and prevent premature wear and tear.',
+                    lorem:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu sagittis nibh. Morbi convallis augue non leo dictum, eget mollis lacus euismod. Suspendisse ante lectus, blandit quis eros id, vestibulum tincidunt neque. In vulputate augue ut ligula sollicitudin sagittis. Fusce vel eros aliquam, fermentum turpis ut, dignissim velit. Integer eleifend est ante, a rutrum purus tincidunt id. Maecenas eu fermentum ligula. Proin commodo sollicitudin ex ac porttitor. Ut placerat fermentum leo et pharetra. Nulla porttitor vel massa a placerat. Morbi gravida accumsan sapien, ut euismod orci. Ut lobortis eleifend mauris sit amet suscipit. Phasellus eget tellus aliquet, luctus tortor vel, tempor magna. '
                 }
             },
             cro: {
@@ -82,7 +91,17 @@ i18next
                     ourServices: 'Naše usluge',
                     more: 'Saznaj više',
                     tradition: 'Tradicija duža od dva desetljeća uspješnog rada jamstvo su naše kvalitete u što su se već uvjerili naši brojni klijenti. Nazovite 091/ 20 05 862',
-                    service: 'Servis auto klime, svih vrsta električnog alata i strojeva, rashladne tehnike i elektroinstalacija'
+                    service: 'Servis auto klime, svih vrsta električnog alata i strojeva, rashladne tehnike i elektroinstalacija',
+                    acImportance:'Važan dio pripreme vozila za nadolazeću sezonu (ljeto ili zimu) je kvalitetna priprema auto klima uređaja. Njegovo pravilno i redovito održavanje osigurava dugovječnost te ugodno i zdravo putovanje vozača i putnika.',
+                    acService:'Koristeći suvremene sustave za dopunjavanje i kontrolu rashladnog sredstva u klimatizacijskom sustavu te uz naše certificirano i obučeno osoblje, autoservis Bunoko osigurava pravilno održavanje klimatizacijskog sustava u Vašem vozilu.',
+                    acServiceDetail:'Pregled sustava klimatizacije, punjenje rashladnog sredstva klima uređaja (R134a) na propisanu količinu, recikliranje rashladnog sredstva i vakumiranje sustava klimatizacije, pregled curenja UV tintom, zamjena ulja u sustavu klimatizacije, kontrola visokog i niskog tlaka u sustavu, djelomične zamjene klima uređaja, djelomične zamjene rashladnog sustava',
+                    toolSaleDetail:'Uz usluge održavanja klima uređaja, namotavanja i popravka alata, nudimo kupnju i prodaju željenog alata i pribora.',
+                    windingDetail:'Rotor vašeg vozila kritičan je element za besprijekoran rad elektromotora.',
+                    windingDetail2:' Nudimo temeljite preglede rotora, otkrivanje znakova istrošenosti, neuravnoteženosti ili oštećenja.',
+                    windingDetail3:'Ako je potrebno, pružamo usluge preciznog namotavanja ili zamjene rotora, koristeći najbolju praksu u industriji za poboljšanje performansi i produljenje životnog vijeka vašeg motora.',
+                    toolRepairDetail:'Nudimo usluge održavanja i popravka alata, strojeva i aparata, uključujući vibratore za miješanje betona, građevinske dizalice i sve vrste električnih ručnih alata.',
+                    toolRepairDetail2:'Naše usluge doprinose njihovoj dugovječnosti i sprječavaju prijevremeno trošenje.',
+                    lorem:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu sagittis nibh. Morbi convallis augue non leo dictum, eget mollis lacus euismod. Suspendisse ante lectus, blandit quis eros id, vestibulum tincidunt neque. In vulputate augue ut ligula sollicitudin sagittis. Fusce vel eros aliquam, fermentum turpis ut, dignissim velit. Integer eleifend est ante, a rutrum purus tincidunt id. Maecenas eu fermentum ligula. Proin commodo sollicitudin ex ac porttitor. Ut placerat fermentum leo et pharetra. Nulla porttitor vel massa a placerat. Morbi gravida accumsan sapien, ut euismod orci. Ut lobortis eleifend mauris sit amet suscipit. Phasellus eget tellus aliquet, luctus tortor vel, tempor magna. '
                 }
             }
         }

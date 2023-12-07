@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTranslation } from "react-i18next";
-import "./Career.scss";
+import "./Career.css";
 
 const Careers = () => {
     const { t } = useTranslation();
@@ -8,11 +8,8 @@ const Careers = () => {
     <div className="mainDiv">
       <div className="card_image card">
         <div className="card_content">
-          <h2>{t('careers')}</h2>
+          <h2>{t('careerTitle')}</h2>
           <p>
-            {t('careerTitle')}
-            <br />
-            <br />
             {t('careerParagraph')}
           </p>
         </div>

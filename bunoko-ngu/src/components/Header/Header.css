@@ -72,4 +72,48 @@ header nav .dropdownList li {
 }
 header nav .dropdownList li:hover {
   color: #070000;
+}
+header nav .menu-btn {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    position: relative;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  header h1 {
+    font-size: 1.75rem;
+  }
+  header nav {
+    flex-direction: column;
+    padding: 0;
+  }
+  header nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 0.25rem;
+  }
+  header nav ul li {
+    width: 100%;
+    text-align: center;
+  }
+  header nav .menu-btn {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    right: 0;
+    top: -1.85rem;
+  }
+  header .open {
+    display: flex;
+    padding: 0;
+    padding-top: 2.5rem;
+    left: 50%;
+    transform: translate(-20%, 0);
+  }
 }/*# sourceMappingURL=Header.css.map */

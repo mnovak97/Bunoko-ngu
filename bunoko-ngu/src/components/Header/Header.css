@@ -32,6 +32,7 @@ header nav ul {
   justify-content: space-between;
   list-style-type: none;
   align-items: flex-end;
+  height: 100%;
 }
 header nav ul li {
   padding-inline: 20px;
@@ -118,7 +119,7 @@ header nav .menu-btn {
   header .open {
     display: flex;
     padding: 0;
-    padding-top: 2.5rem;
+    padding-top: 3rem;
     left: 50%;
     transform: translate(-20%, 0);
   }

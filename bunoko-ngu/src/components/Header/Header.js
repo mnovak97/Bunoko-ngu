@@ -34,6 +34,10 @@ function Header() {
     setIsDropdownOpen(false);
   };
   
+  const handleNavigation = () => {
+    navRef.current.classList.toggle("open")
+    setIsListOpen(!isListOpen)
+  };
 
   return (
     <header>
@@ -41,16 +45,16 @@ function Header() {
       <nav >
         <ul ref={navRef}>
           <li>
-            <Link to="/about">{t('about')}</Link>  
+            <Link to="/about" onClick={handleNavigation}>{t('about')}</Link>  
           </li>
           <li>
-            <Link to="/services">{t('services')}</Link>  
+            <Link to="/services" onClick={handleNavigation}>{t('services')}</Link>  
           </li>
           <li>
-            <Link to="/careers" >{t('careers')}</Link>  
+            <Link to="/careers" onClick={handleNavigation}>{t('careers')}</Link>  
           </li>
           <li>
-            <Link to="/contact">{t('contact')}</Link>  
+            <Link to="/contact" onClick={handleNavigation}>{t('contact')}</Link>  
           </li>
           <li className="dropdown" onClick={toggleDropdown}>
           {currentLanguage.label}

@@ -1,22 +1,32 @@
-import React from 'react';
+import React from "react";
 import { useTranslation } from "react-i18next";
-import "./Career.css";
+import { useNavigate } from "react-router-dom";
+import "./Career.scss";
 
 const Careers = () => {
-    const { t } = useTranslation();
+  const { t } = useTranslation();
+  const navigate = useNavigate();
+
+  const handleContact = () => {
+    navigate("/contact");
+  };
+
   return (
-    <div className="mainDiv">
-      <div className="card_image card">
-        <div className="card_content">
-          <h2>{t('careerTitle')}</h2>
-          <p>
-            {t('careerParagraph')}
-          </p>
+    <div className="careers">
+      <div className="careers__container">
+        <div className="careers__content">
+          <h1>{t("careerTitle")}</h1>
+          <p>{t("careerParagraph")}</p>
+          <button className="careers__btn" onClick={handleContact}>
+            {t("apply")}
+          </button>
         </div>
-        <img src="https://picsum.photos/700/450" alt='' />
+        <div className="careers__image">
+          <img src="img/student-mechanic.jpg" alt="Students" />
+        </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default Careers;

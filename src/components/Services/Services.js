@@ -1,90 +1,91 @@
-import React, { useState, useEffect } from 'react';
-import { useTranslation } from 'react-i18next';
-import { useLocation } from 'react-router-dom';
-import './Services.css';
+import React, { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
+import { useLocation } from "react-router-dom";
+import "./Services.scss";
 
 const Services = () => {
-  const [displayedText, setDisplayedText] = useState("");
   const [activeService, setActiveService] = useState("");
-
   const { t } = useTranslation();
   const location = useLocation();
 
   useEffect(() => {
     const { wantedService } = location.state || {};
-    setDisplayedText(wantedService);
-    setActiveService(wantedService);
+    if (wantedService) setActiveService(wantedService);
   }, [location.state]);
 
   const handleServiceClick = (serviceType) => {
-    setDisplayedText(serviceType);
-    setActiveService(serviceType);
+    setActiveService((prev) => (prev === serviceType ? "" : serviceType));
   };
 
+  const services = [
+    {
+      code: "AC",
+      title: t("airCondition"),
+      icon: "http://bunoko-ngu.hr/wp-content/uploads/2015/04/home_factory_icon_1.png",
+      img: "img/ac-not-working.jpg",
+      shortDesc: "Brza i pouzdana usluga klimatizacije.",
+      content: [t("acImportance"), t("acService"), t("acServiceDetail")],
+    },
+    {
+      code: "WINDING",
+      title: t("winding"),
+      icon: "http://bunoko-ngu.hr/wp-content/uploads/2015/04/home_factory_icon_2.png",
+      img: "img/rewinding-electromotor.jpg",
+      shortDesc: "Profesionalno navijanje elektromotora.",
+      content: [t("windingDetail"), t("windingDetail2"), t("windingDetail3")],
+    },
+    {
+      code: "TOOLS",
+      title: t("tools"),
+      icon: "http://bunoko-ngu.hr/wp-content/uploads/2015/04/home_factory_icon_5.png",
+      img: "img/servicing-tools.jpg",
+      shortDesc: "Popravak i održavanje alata.",
+      content: [t("toolRepairDetail"), t("toolRepairDetail2")],
+    },
+    {
+      code: "TOOLSALE",
+      title: t("toolsSale"),
+      icon: "http://bunoko-ngu.hr/wp-content/uploads/2015/04/home_factory_icon_3.png",
+      img: "img/selling-auto-parts.jpg",
+      shortDesc: "Prodaja kvalitetnih alata i rezervnih dijelova.",
+      content: [t("toolSaleDetail")],
+    },
+  ];
+
   return (
-    <>
-      <div className='display-card'>
-        <div className='service-lineup'>
-          <button
-            className={`service-card ${activeService === 'AC' ? 'active' : ''}`}
-            onClick={() => handleServiceClick('AC')}
+    <div className="services-container">
+      {services.map((service) => {
+        const isActive = activeService === service.code;
+        return (
+          <div
+            key={service.code}
+            className={`service-card ${isActive ? "active" : ""}`}
+            onClick={() => handleServiceClick(service.code)}
           >
-            <img className="scale-with-grid" src="http://bunoko-ngu.hr/wp-content/uploads/2015/04/home_factory_icon_1.png" alt="home_factory_icon_2" />
-            <h3>{t('airCondition')}</h3>
-          </button>
-          <button
-            className={`service-card ${activeService === 'WINDING' ? 'active' : ''}`}
-            onClick={() => handleServiceClick('WINDING')}
-          >
-            <img className="scale-with-grid" src="http://bunoko-ngu.hr/wp-content/uploads/2015/04/home_factory_icon_2.png" alt="home_factory_icon_2" />
-            <h3>{t('winding')}</h3>
-          </button>
-          <button
-            className={`service-card ${activeService === 'TOOLS' ? 'active' : ''}`}
-            onClick={() => handleServiceClick('TOOLS')}
-          >
-            <img className="scale-with-grid" src="http://bunoko-ngu.hr/wp-content/uploads/2015/04/home_factory_icon_5.png" alt="home_factory_icon_2" />
-            <h3>{t('tools')}</h3>
-          </button>
-          <button
-            className={`service-card ${activeService === 'TOOLSALE' ? 'active' : ''}`}
-            onClick={() => handleServiceClick('TOOLSALE')}
-          >
-            <img className="scale-with-grid" src="http://bunoko-ngu.hr/wp-content/uploads/2015/04/home_factory_icon_3.png" alt="home_factory_icon_2" />
-            <h3>{t('toolsSale')}</h3>
-          </button>
-        </div>
-        <article className="displayed-description">
-          {displayedText === "AC" ? (
-            <div>
-              <p>{t('acImportance')}</p>
-              <br/>
-              <p>{t('acService')}</p>
-              <br/>
-              <p>{t('acServiceDetail')}</p>
+            <div className="service-image">
+              <img src={service.img} alt={service.title} />
+              {!isActive && (
+                <div className="overlay">
+                  <img className="icon" src={service.icon} alt="icon" />
+                  <h3>{service.title}</h3>
+                  <p>{service.shortDesc}</p>
+                </div>
+              )}
             </div>
-          ) : displayedText === "WINDING" ? (
-            <div>
-              <p>{t('windingDetail')}</p>
-              <br/>
-              <p>{t('windingDetail2')}</p>
-              <br/>
-              <p>{t('windingDetail3')}</p>
-            </div>
-          ) : displayedText === "TOOLSALE" ? (
-            <div>
-              <p>{t('toolSaleDetail')}</p>
-            </div>
-          ) : displayedText === "TOOLS" ? (
-            <div>
-              <p>{t('toolRepairDetail')}</p>
-              <br/>
-              <p>{t('toolRepairDetail2')}</p>
-            </div>
-          ) : null}
-        </article>
-      </div>
-    </>
+            {isActive && (
+              <div className="service-content">
+                <h3>{service.title}</h3>
+                <div className="content-text">
+                  {service.content.map((p, idx) => (
+                    <p key={idx}>{p}</p>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
+        );
+      })}
+    </div>
   );
 };
 

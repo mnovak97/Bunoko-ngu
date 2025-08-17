@@ -6,6 +6,7 @@ import emailjs from '@emailjs/browser';
 function Contact() {
   const { t } = useTranslation();
   const form = useRef();
+
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -58,11 +59,17 @@ function Contact() {
         <div className="info">
           <div>
             <h4>BUNOKO N.G.U. d.o.o.</h4>
-            Gornji Bukovac 96, 10000,Zagreb
+            <a
+              href="https://www.google.com/maps?q=Gornji+Bukovac+96,+10000+Zagreb"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Gornji Bukovac 96, 10000, Zagreb
+            </a>
             <br />
-            {t('phone')}: 01 2340 884
+            <a href="tel:012340884">{t('phone')}: 01 2340 884</a>
             <br />
-            {t('mobile')}: 091 2005 862
+            <a href="tel:0912005862">{t('mobile')}: 091 2005 862</a>
             <br />
             Fax: 01 2340 884
             <br />
@@ -72,7 +79,7 @@ function Contact() {
             <br />
             {t('saturday')}: 9-13
             <br />
-            <a href="mailto:bunokongu@gmail.com">bunokongu@gmail.com</a>
+            <a href="mailto:ipad3monkey@gmail.com">bunokongu@gmail.com</a>
           </div>
           <iframe
             className="map-container"

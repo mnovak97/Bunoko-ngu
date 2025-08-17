@@ -1,60 +1,116 @@
-.buttonSubmit {
-  padding: 15px;
-  width: 250px;
-  border-radius: 30px;
-  background-color: #121e2d;
-  color: #fff;
-  font-size: 18px;
-  cursor: pointer;
-  margin: 20px auto 0;
-}
-
 .container {
-  width: 100%;
-  height: 100vh;
+  padding-top: 130px;
   display: flex;
-  align-items: center;
   justify-content: center;
+  gap: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  flex-wrap: wrap;
 }
-
-form {
+.container form {
+  max-height: 500px;
+  flex: 1 1 400px;
+  max-width: 500px;
+  padding: 2rem;
   background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
-  padding: 2vw 4vw;
-  width: 90%;
-  max-width: 600px;
-  border-radius: 10px;
-  box-shadow: 2px 2px 2px 2px #e7e5e5;
-  position: absolute;
+  gap: 1rem;
 }
-
-form h2 {
-  color: #555;
-  font-weight: 800;
-  margin-bottom: 20px;
+.container form h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #001f4d;
 }
-
-form input, form textarea {
-  box-shadow: 2px 2px 2px 2px #e7e5e5;
-  margin: 10px 0;
-  padding: 20px;
+.container form .formInput {
+  padding: 0.75rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+.container form .formInput:focus {
   outline: none;
-  border-radius: 10px;
-  border: 0;
-  font-size: 16px;
+  border-color: #001f4d;
 }
-
-.contactInfo {
-  display: block;
+.container form textarea.formInput {
+  min-height: 120px;
+  resize: vertical;
 }
-
-.info {
-  position: relative;
-  top: 700px;
-  border: 0;
+.container form .buttonSubmit {
+  background: #001f4d;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.container form .buttonSubmit:hover {
+  background: #003080;
+}
+.container > div {
+  flex: 1 1 400px;
+  max-width: 500px;
   display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
-.info div {
-  padding-right: 100px;
+.container > div h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #001f4d;
+}
+.container > div .info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.container > div .info div {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+.container > div .info div h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #001f4d;
+}
+.container > div .info div a {
+  color: #001f4d;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.container > div .info div a:hover {
+  color: #003080;
+  text-decoration: underline;
+}
+.container > div .info .map-container {
+  width: 100%;
+  height: 350px;
+  border: none;
+  border-radius: 12px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .container form, .container > div {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+  .container .info .map-container {
+    height: 250px;
+  }
 }/*# sourceMappingURL=Contact.css.map */

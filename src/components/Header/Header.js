@@ -1,15 +1,14 @@
 import "./Header.scss";
 import { useTranslation } from "react-i18next";
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 function Header() {
   const { t, i18n } = useTranslation();
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const navRef = useRef();
   const location = useLocation();
 
   const availableLanguages = [
@@ -22,88 +21,83 @@ function Header() {
     availableLanguages[0];
 
   const toggleDropdown = () => setIsDropdownOpen((prev) => !prev);
-  const toggleMenu = () => {
-    navRef.current.classList.toggle("open");
-    setIsMenuOpen((prev) => !prev);
-  };
-
+  const toggleMobileMenu = () => setIsMobileMenuOpen((prev) => !prev);
   const changeLanguage = (code) => {
     i18n.changeLanguage(code);
     setIsDropdownOpen(false);
   };
 
-  // Scroll listener
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 300);
-    };
+    const handleScroll = () => setIsScrolled(window.scrollY > 50);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Page-based header background classes
-  const getHeaderClass = () => {
-    if (isScrolled) return "header scrolled"; // navy when scrolled
+  const menuItems = [
+    { to: "/about", label: t("about") },
+    { to: "/services", label: t("services") },
+    { to: "/careers", label: t("careers") },
+    { to: "/contact", label: t("contact") },
+  ];
 
-    if (location.pathname === "/" || location.pathname === "/about") {
-      return "header transparent"; // homepage + about → transparent
-    }
-
-    return "header navy"; // all other pages → navy
-  };
+  // Determine desktop header class
+  const isTransparent =
+    (location.pathname === "/" || location.pathname === "/about") && !isScrolled;
 
   return (
-    <header className={getHeaderClass()}>
+    <header className={`header ${isTransparent ? "transparent" : "scrolled"}`}>
       <div className="header__container">
-        <h1 className="header__logo">
+        <div className="header__logo">
           <Link to="/">bunoko n.g.u.</Link>
-        </h1>
+        </div>
 
-        <nav className="header__nav">
-          <ul
-            ref={navRef}
-            className={`header__links ${isMenuOpen ? "open" : ""}`}
-          >
-            <li>
-              <Link to="/about" onClick={toggleMenu}>
-                {t("about")}
-              </Link>
-            </li>
-            <li>
-              <Link to="/services" onClick={toggleMenu}>
-                {t("services")}
-              </Link>
-            </li>
-            <li>
-              <Link to="/careers" onClick={toggleMenu}>
-                {t("careers")}
-              </Link>
-            </li>
-            <li>
-              <Link to="/contact" onClick={toggleMenu}>
-                {t("contact")}
-              </Link>
-            </li>
-            <li className="header__lang">
-              <button onClick={toggleDropdown}>
-                {currentLanguage.label}
-              </button>
-              {isDropdownOpen && (
-                <ul className="header__dropdown">
-                  {availableLanguages.map((lang) => (
-                    <li key={lang.code} onClick={() => changeLanguage(lang.code)}>
-                      {lang.label}
-                    </li>
-                  ))}
-                </ul>
-              )}
+        {/* Desktop Menu */}
+        <nav className="header__nav desktop">
+          <ul className="header__links">
+            {menuItems.map((item) => (
+              <li key={item.to}>
+                <Link to={item.to}>{item.label}</Link>
+              </li>
+            ))}
+
+            <li className={`header__lang ${isDropdownOpen ? "open" : ""}`}>
+              <button onClick={toggleDropdown}>{currentLanguage.label}</button>
+              <ul className="header__dropdown">
+                {availableLanguages.map((lang) => (
+                  <li key={lang.code} onClick={() => changeLanguage(lang.code)}>
+                    {lang.label}
+                  </li>
+                ))}
+              </ul>
             </li>
           </ul>
-
-          <button className="header__menu-btn" onClick={toggleMenu}>
-            {isMenuOpen ? <FaTimes /> : <FaBars />}
-          </button>
         </nav>
+
+        {/* Mobile Hamburger */}
+        <div className="header__mobile">
+          <button className="header__menu-btn" onClick={toggleMobileMenu}>
+            {isMobileMenuOpen ? <FaTimes /> : <FaBars />}
+          </button>
+
+          <ul className={`header__mobile-menu ${isMobileMenuOpen ? "open" : ""}`}>
+            {menuItems.map((item) => (
+              <li key={item.to} onClick={() => setIsMobileMenuOpen(false)}>
+                <Link to={item.to}>{item.label}</Link>
+              </li>
+            ))}
+
+            <li className={`header__lang ${isDropdownOpen ? "open" : ""}`}>
+              <button onClick={toggleDropdown}>{currentLanguage.label}</button>
+              <ul className="header__dropdown">
+                {availableLanguages.map((lang) => (
+                  <li key={lang.code} onClick={() => changeLanguage(lang.code)}>
+                    {lang.label}
+                  </li>
+                ))}
+              </ul>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
   );

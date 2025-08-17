@@ -37,6 +37,7 @@
   display: block;
 }
 .services-container .service-card .service-image .overlay {
+  max-width: calc(100% - 30px);
   position: absolute;
   top: 0;
   left: 0;
@@ -93,7 +94,7 @@
   flex: 1;
   overflow-y: auto;
   padding-right: 0.5rem;
-  max-width: calc(100% - 100px);
+  max-width: calc(100% - 50px);
   transition: all 0.5s ease;
 }
 .services-container .service-card .service-content .content-text p {
